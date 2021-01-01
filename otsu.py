@@ -62,7 +62,7 @@ def OTSU(gray):
 
 
 if __name__ == "__main__":
-    img = cv.imread('potato1.JPG')  # 读取图像（BGR）
+    img = cv.imread('potato1-2JPG.JPG')  # 读取图像（BGR）
     gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)  # 转灰度图像
     M, k = OTSU(gray)
     print(M, k)
@@ -70,3 +70,4 @@ if __name__ == "__main__":
     cv.imshow("histogram", thresh1)
 
     print("ok")
+    print("ok2")
